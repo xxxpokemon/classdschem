@@ -1,0 +1,405 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L R R2
+U 1 1 568411B2
+P 4200 2200
+F 0 "R2" V 4280 2200 50  0000 C CNN
+F 1 "1k" V 4200 2200 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 4130 2200 30  0001 C CNN
+F 3 "" H 4200 2200 30  0000 C CNN
+	1    4200 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 5684123A
+P 6100 2200
+F 0 "R4" V 6180 2200 50  0000 C CNN
+F 1 "1k" V 6100 2200 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 6030 2200 30  0001 C CNN
+F 3 "" H 6100 2200 30  0000 C CNN
+	1    6100 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C1
+U 1 1 5684128E
+P 7550 2150
+F 0 "C1" H 7575 2250 50  0000 L CNN
+F 1 "100n" H 7575 2050 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D10_L20_P2.5-5" H 7588 2000 30  0001 C CNN
+F 3 "" H 7550 2150 60  0000 C CNN
+	1    7550 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L IRF540N Q6
+U 1 1 5684137A
+P 6450 4350
+F 0 "Q6" H 6700 4425 50  0000 L CNN
+F 1 "IRF540N" H 6700 4350 50  0000 L CNN
+F 2 "Power_Integrations:TO-220" H 6700 4275 50  0000 L CIN
+F 3 "" H 6450 4350 50  0000 L CNN
+	1    6450 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L IRF9540N Q2
+U 1 1 56841418
+P 4600 2500
+F 0 "Q2" H 4850 2575 50  0000 L CNN
+F 1 "IRF9540N" H 4850 2500 50  0000 L CNN
+F 2 "Power_Integrations:TO-220" H 4850 2425 50  0000 L CIN
+F 3 "" H 4600 2500 50  0000 L CNN
+	1    4600 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR_SMALL L1
+U 1 1 5684148F
+P 7550 3200
+F 0 "L1" H 7550 3300 50  0000 C CNN
+F 1 "INDUCTOR_SMALL" H 7550 3150 50  0000 C CNN
+F 2 "Choke_Toroid_ThroughHole:Choke_Toroid_horizontal_Diameter12-5mm_Amidon-T44" H 7550 3200 60  0001 C CNN
+F 3 "" H 7550 3200 60  0000 C CNN
+	1    7550 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L IRF540N Q3
+U 1 1 5684166C
+P 4600 4350
+F 0 "Q3" H 4850 4425 50  0000 L CNN
+F 1 "IRF540N" H 4850 4350 50  0000 L CNN
+F 2 "Power_Integrations:TO-220" H 4850 4275 50  0000 L CIN
+F 3 "" H 4600 4350 50  0000 L CNN
+	1    4600 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L IRF9540N Q5
+U 1 1 568416B6
+P 6450 2500
+F 0 "Q5" H 6700 2575 50  0000 L CNN
+F 1 "IRF9540N" H 6700 2500 50  0000 L CNN
+F 2 "Power_Integrations:TO-220" H 6700 2425 50  0000 L CIN
+F 3 "" H 6450 2500 50  0000 L CNN
+	1    6450 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 568418BE
+P 7800 2500
+F 0 "#PWR01" H 7800 2250 50  0001 C CNN
+F 1 "GND" H 7800 2350 50  0000 C CNN
+F 2 "" H 7800 2500 60  0000 C CNN
+F 3 "" H 7800 2500 60  0000 C CNN
+	1    7800 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR02
+U 1 1 568418E8
+P 5350 1800
+F 0 "#PWR02" H 5350 1650 50  0001 C CNN
+F 1 "+12V" H 5350 1940 50  0000 C CNN
+F 2 "" H 5350 1800 60  0000 C CNN
+F 3 "" H 5350 1800 60  0000 C CNN
+	1    5350 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P2
+U 1 1 5684193E
+P 9100 3250
+F 0 "P2" H 9100 3400 50  0000 C CNN
+F 1 "CONN_01X02" V 9200 3250 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 9100 3250 60  0001 C CNN
+F 3 "" H 9100 3250 60  0000 C CNN
+	1    9100 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C2
+U 1 1 56843D7B
+P 8000 2150
+F 0 "C2" H 8025 2250 50  0000 L CNN
+F 1 "330u" H 8025 2050 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D10_L20_P2.5-5" H 8038 2000 30  0001 C CNN
+F 3 "" H 8000 2150 60  0000 C CNN
+	1    8000 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C3
+U 1 1 56846840
+P 8250 3500
+F 0 "C3" H 8275 3600 50  0000 L CNN
+F 1 "2.2n" H 8275 3400 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D10_L20_P2.5-5" H 8288 3350 30  0001 C CNN
+F 3 "" H 8250 3500 60  0000 C CNN
+	1    8250 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 2050 4200 1800
+Wire Wire Line
+	4200 1800 8000 1800
+Wire Wire Line
+	6100 1800 6100 2050
+Wire Wire Line
+	4200 2350 4200 3050
+Wire Wire Line
+	4200 2550 4400 2550
+Wire Wire Line
+	4700 2300 4700 1800
+Connection ~ 4700 1800
+Wire Wire Line
+	6100 2350 6100 3050
+Wire Wire Line
+	6100 2550 6250 2550
+Wire Wire Line
+	6550 1800 6550 2300
+Connection ~ 6100 1800
+Wire Wire Line
+	7550 1800 7550 2000
+Connection ~ 6550 1800
+Wire Wire Line
+	8000 1800 8000 2000
+Connection ~ 7550 1800
+Wire Wire Line
+	7550 2300 7550 2500
+Wire Wire Line
+	7550 2500 8000 2500
+Connection ~ 7800 2500
+Wire Wire Line
+	8000 2500 8000 2300
+Wire Wire Line
+	4200 3450 4200 3700
+Connection ~ 6100 2550
+Wire Wire Line
+	6100 3450 6100 3700
+Wire Wire Line
+	4200 4100 4200 4650
+Wire Wire Line
+	4200 4400 4400 4400
+Wire Wire Line
+	4700 2700 4700 4150
+Wire Wire Line
+	4700 3600 7100 3600
+Connection ~ 4700 3600
+Wire Wire Line
+	6100 4100 6100 4700
+Wire Wire Line
+	6100 4400 6250 4400
+Wire Wire Line
+	6550 2700 6550 4150
+Wire Wire Line
+	6550 3200 7300 3200
+Connection ~ 6550 3200
+Wire Wire Line
+	7100 3600 7100 3650
+Wire Wire Line
+	7100 3650 8600 3650
+Wire Wire Line
+	7800 3200 8900 3200
+Wire Wire Line
+	8250 3200 8250 3350
+Connection ~ 8250 3200
+Wire Wire Line
+	8600 3650 8600 3300
+Wire Wire Line
+	8600 3300 8900 3300
+Connection ~ 8250 3650
+$Comp
+L BC547 Q1
+U 1 1 56847EEB
+P 4100 4850
+F 0 "Q1" H 4300 4925 50  0000 L CNN
+F 1 "BC547" H 4300 4850 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Narrow_Oval" H 4300 4775 50  0000 L CIN
+F 3 "" H 4100 4850 50  0000 L CNN
+	1    4100 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L BC547 Q4
+U 1 1 56847F5C
+P 6000 4900
+F 0 "Q4" H 6200 4975 50  0000 L CNN
+F 1 "BC547" H 6200 4900 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Narrow_Oval" H 6200 4825 50  0000 L CIN
+F 3 "" H 6000 4900 50  0000 L CNN
+	1    6000 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D1
+U 1 1 568481F0
+P 4200 3250
+F 0 "D1" H 4200 3350 50  0000 C CNN
+F 1 "LED" H 4200 3150 50  0000 C CNN
+F 2 "LEDs:LED-5MM" H 4200 3250 60  0001 C CNN
+F 3 "" H 4200 3250 60  0000 C CNN
+	1    4200 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D2
+U 1 1 56848372
+P 4200 3900
+F 0 "D2" H 4200 4000 50  0000 C CNN
+F 1 "LED" H 4200 3800 50  0000 C CNN
+F 2 "LEDs:LED-5MM" H 4200 3900 60  0001 C CNN
+F 3 "" H 4200 3900 60  0000 C CNN
+	1    4200 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D3
+U 1 1 56848708
+P 6100 3250
+F 0 "D3" H 6100 3350 50  0000 C CNN
+F 1 "LED" H 6100 3150 50  0000 C CNN
+F 2 "LEDs:LED-5MM" H 6100 3250 60  0001 C CNN
+F 3 "" H 6100 3250 60  0000 C CNN
+	1    6100 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D4
+U 1 1 56848E58
+P 6100 3900
+F 0 "D4" H 6100 4000 50  0000 C CNN
+F 1 "LED" H 6100 3800 50  0000 C CNN
+F 2 "LEDs:LED-5MM" H 6100 3900 60  0001 C CNN
+F 3 "" H 6100 3900 60  0000 C CNN
+	1    6100 3900
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4200 4400
+Connection ~ 6100 4400
+Wire Wire Line
+	4200 5050 4200 5300
+Wire Wire Line
+	4200 5300 6550 5300
+Wire Wire Line
+	6100 5300 6100 5100
+Wire Wire Line
+	4700 4550 4700 5300
+Connection ~ 4700 5300
+Wire Wire Line
+	6550 5300 6550 4550
+Connection ~ 6100 5300
+$Comp
+L GND #PWR03
+U 1 1 5684AE6A
+P 5400 5400
+F 0 "#PWR03" H 5400 5150 50  0001 C CNN
+F 1 "GND" H 5400 5250 50  0000 C CNN
+F 2 "" H 5400 5400 60  0000 C CNN
+F 3 "" H 5400 5400 60  0000 C CNN
+	1    5400 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 5400 5400 5300
+Connection ~ 5400 5300
+$Comp
+L R R1
+U 1 1 5684B764
+P 3600 4850
+F 0 "R1" V 3680 4850 50  0000 C CNN
+F 1 "10k" V 3600 4850 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 3530 4850 30  0001 C CNN
+F 3 "" H 3600 4850 30  0000 C CNN
+	1    3600 4850
+	0    1    1    0   
+$EndComp
+$Comp
+L R R3
+U 1 1 5684B8C3
+P 5550 4900
+F 0 "R3" V 5630 4900 50  0000 C CNN
+F 1 "10k" V 5550 4900 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 5480 4900 30  0001 C CNN
+F 3 "" H 5550 4900 30  0000 C CNN
+	1    5550 4900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5700 4900 5800 4900
+Wire Wire Line
+	3750 4850 3900 4850
+Wire Wire Line
+	3450 4850 3300 4850
+Wire Wire Line
+	5400 4900 5250 4900
+Text GLabel 3300 4850 0    60   Input ~ 0
+IN+
+Text GLabel 5250 4900 0    60   Input ~ 0
+IN-
+$Comp
+L CONN_01X02 P1
+U 1 1 5684DDEB
+P 1850 4000
+F 0 "P1" H 1850 4150 50  0000 C CNN
+F 1 "CONN_01X02" V 1950 4000 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 1850 4000 60  0001 C CNN
+F 3 "" H 1850 4000 60  0000 C CNN
+	1    1850 4000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2050 4050 2350 4200
+Wire Wire Line
+	2050 3950 2450 3750
+Text GLabel 2450 3750 2    60   Input ~ 0
+IN+
+Text GLabel 2350 4200 2    60   Input ~ 0
+IN-
+$EndSCHEMATC
